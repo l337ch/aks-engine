@@ -12,7 +12,9 @@
             }
         },
         "customCloudProfile": {
-            "portalURL": "https://<portal Url>/"
+            "identitySystem": "adfs",
+            "authenticationMethod": "client_certificate",
+            "portalURL": ""
         },
         "masterProfile": {
             "dnsPrefix": "",
@@ -44,7 +46,10 @@
         },
         "servicePrincipalProfile": {
             "clientId": "",
-            "secret": ""
+            "keyvaultSecretRef": {
+                "vaultID": "",
+                "secretName": ""
+            }
         }
     }
 }
